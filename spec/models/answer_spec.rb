@@ -14,11 +14,12 @@ RSpec.describe Answer, :type => :model do
   end
 
 
-    it "belongs to an answer" do
+    it "belongs to a question" do
       question = Question.new
       answer = Answer.new
       question.answers << answer
-      expect(question.answer).to be answer
-  end
+      expect(answer.question).to be question
+    end
 end
+
 

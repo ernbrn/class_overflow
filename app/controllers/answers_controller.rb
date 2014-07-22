@@ -23,6 +23,6 @@ class AnswersController < ActionController::Base
 
 
   def answer_params
-    params.require(:answer).permit :responder, :response
+    params.require(:answer).permit :responder, :response, :question_id
   end
 end
