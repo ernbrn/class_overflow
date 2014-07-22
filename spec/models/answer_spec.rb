@@ -12,5 +12,13 @@ RSpec.describe Answer, :type => :model do
   it 'validates the presence of responder' do
     expect(answer.errors).to have_key(:responder)
   end
+
+
+    it "belongs to an answer" do
+      question = Question.new
+      answer = Answer.new
+      question.answers << answer
+      expect(question.answer).to be answer
+  end
 end
 

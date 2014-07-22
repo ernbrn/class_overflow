@@ -19,6 +19,4 @@ feature 'List all answers ' do
     expect(page).to have_content(answer.response)
   end
 
-
-
 end
