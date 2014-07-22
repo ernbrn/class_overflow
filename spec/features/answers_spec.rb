@@ -5,6 +5,8 @@ feature 'List all answers ' do
     answer = create(:answer)
     visit answers_path
     expect(page).to have_content('Response')
+    expect(page).to have_content('Responder')
+
   end
 
 
