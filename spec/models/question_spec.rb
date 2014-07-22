@@ -1,5 +1,16 @@
 require 'rails_helper'
 
 RSpec.describe Question, :type => :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  #makes a new question and saves it
+  let(:question) {subject}
+
+  before { expect(question).not_to be_valid }
+
+  it 'validates the presence of title' do
+    expect(question.errors).to have_key(:title)
+  end
+
+  it 'validates the presence of content' do
+    expect(question.errors).to have_key(:content)
+  end
 end
