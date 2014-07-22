@@ -1,3 +1,3 @@
 class Question < ActiveRecord::Base
-  validates :title, :content, presence: true
+  validates :title, :content, :inquirer, presence: true
 end

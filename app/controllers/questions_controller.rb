@@ -23,8 +23,8 @@ class QuestionsController < ApplicationController
   end
 
   private
-  
+
   def questions_params
-    params.require(:question).permit :title, :content
+    params.require(:question).permit :title, :content, :inquirer
   end
 end

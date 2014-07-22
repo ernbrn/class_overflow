@@ -13,4 +13,8 @@ RSpec.describe Question, :type => :model do
   it 'validates the presence of content' do
     expect(question.errors).to have_key(:content)
   end
+
+  it 'validates the presence of inquirer' do
+    expect(question.errors).to have_key(:inquirer)
+  end
 end
