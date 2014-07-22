@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'byebug'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'guard-rspec', require: false, group: :develpment
 gem 'jbuilder', '~> 2.0'
