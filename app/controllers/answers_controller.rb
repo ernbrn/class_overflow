@@ -1,5 +1,5 @@
 class AnswersController < ActionController::Base
-  render :html
+  respond_to :html
 
   def index
     @answers = Answer.all
