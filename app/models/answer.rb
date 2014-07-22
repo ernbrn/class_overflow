@@ -1,3 +1,3 @@
 class Answer < ActiveRecord::Base
-  validates :response, presence: true
+  validates :response, :responder, presence: true
 end
